@@ -1,0 +1,116 @@
+/* cart.css */
+
+/* Item Container */
+.cart_item {
+  border: 4px solid #ff30ba;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Item Image */
+.cart_item img {
+  max-width: 70px; /* Adjust the value as needed */
+  max-height: 70px; 
+  
+}
+
+/* Quantity Text */
+.item_quantity {
+  color: purple;
+  font-weight: bold;
+}
+
+/* Item Details */
+.cart_item_details {
+  margin-top: 10px;
+  
+}
+
+/* Item Name */
+.cart_item_name {
+  color: green;
+}
+
+/* Item Price */
+.cart_item_price {
+  color: red;
+}
+
+/* Buttons */
+button {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#remove {
+  background-color: #ffe600;
+  color: white;
+}
+
+/* Plus Button */
+#plus {
+  background-color: #39ff14;
+  color: white;
+}
+
+/* Minus Button */
+#minus {
+  background-color: red;
+  color: white;
+}
+
+/* Total Items and Total Price */
+.total_items, .total_price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.total_items {
+  color: yellow;
+}
+
+.total_price {
+  color: #39ff14; /* Green */
+}
+
+/* Checkout and Clear Cart Buttons */
+#checkout {
+  width: 100px;
+  padding: 15px 25px;
+  color: #ffffff;
+  background-color: #39ff14; 
+  border-radius: 60px;
+  border: none;
+  box-shadow: 0 0 0 0 #f9e506;
+  transition: ease-in 1s;
+  outline: none;
+}
+
+#clear_cart {
+  width: 100px;
+  padding: 15px 25px;
+  color: #ffffff;
+  background-color: #39ff14; 
+  border-radius: 60px;
+  border: none;
+  box-shadow: 0 0 0 0 #f9e506;
+  transition: ease-in 1s;
+  outline: none;
+}
+
+#checkout:hover {
+  box-shadow: inset 100px 0 0 0 #e9f906;
+}
+
+#checkout {
+  background-color: red;
+  margin-left: 10px;
+}

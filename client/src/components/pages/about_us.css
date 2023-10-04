@@ -1,0 +1,70 @@
+
+
+.bg
+{
+
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  
+}
+h1
+{
+  
+    font-size: 50px;
+    position: relative;
+    color: #fff;
+    text-align: right;
+    padding-right: 400px;
+   /* animation: glow 1s ease-in-out infinite alternate;*/
+   
+}
+
+h2
+{
+  font-size: 20px;
+  padding-right: 50px;
+  text-align: right;
+  color: gold;
+}
+
+.c1
+{
+  padding-right:180px;
+}
+.c2
+{
+  padding-right: 320px; 
+}
+.c3
+{
+  padding-right: 210px;
+}
+.c4
+{
+  padding-right: 218px;
+}
+.c5
+{
+  padding-right: 325px;
+}
+.contact_us
+{
+  padding-right: 310px;
+  color: chartreuse;
+
+}
+.insta
+{
+  padding-right: 250px;
+  color: red;
+}
+
+
+  
+  
