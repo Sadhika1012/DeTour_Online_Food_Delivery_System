@@ -1,0 +1,43 @@
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: black;
+   
+    list-style: none; 
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  display: inline-block; /* Added */
+  color: white;
+}
+
+#navbar li:hover {
+  background-color: rgba(255,255,255,0.1); /* Added */
+}
+
+#navbar li::before { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: crimson; /* Changed */
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar li:hover::before, #navbar li.active::before { /* Changed */
+  width: 100%;
+  visibility: visible;
+}
+

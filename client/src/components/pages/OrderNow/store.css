@@ -1,0 +1,73 @@
+section {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  
+  .cards {
+    width: 250px;
+    display: inline-block;
+    text-align: justify;
+    text-align-last: end;
+    background-color: #151414;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .cards:hover {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .image_box img {
+    width: 100%;
+    height: auto;
+    
+    border-radius: 10px;
+  }
+  
+  .details p:nth-child(1) {
+    font-weight: bold;
+    color: aqua;
+  }
+  
+  .details p:nth-child(2) {
+    color: rgb(0, 255, 115);
+    font-size: 0.8rem;
+  }
+  
+  .details p:nth-child(3) {
+    font-weight: bold;
+    color: rgb(156, 0, 247);
+  }
+  
+  .details button {
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(201, 0, 0);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .details button:hover {
+    background: linear-gradient(
+      45deg,
+      rgb(247, 49, 49),
+      rgb(247, 89, 49),
+      rgb(247, 128, 49),
+      rgb(247, 105, 49),
+      rgb(247, 49, 49)
+    );
+    background-size: 400%;
+  }
+  

@@ -1,0 +1,214 @@
+/* Background color of the entire page */
+.home-container {
+    background: #000000;
+}
+
+#food_delivery_pic {
+    position: relative;
+    left: 800px; /* Adjust this value to move it left */
+    top: 40px;
+    width: 300px;
+    height: 280px;
+}
+
+
+#detour_pic {
+    margin-right: 200px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Making the plain button look fancy */
+.home-button {
+    font-size: 15px;
+    width: 150px;
+    padding: 10px;
+    font-family: cursive;
+    font-weight: 100px;
+    border-radius: 80px;
+    letter-spacing: 3px;
+    cursor: pointer; 
+    transition: 1.5s;
+    background: #111;
+    color: #fff;
+}
+
+.home-button:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4, #f441a5);
+    background-size: 400%;
+}
+
+.home-button:before {
+    content: '';   
+    position: absolute;
+    background: inherit ;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    filter: blur(80px);
+    opacity: 0;
+    transition: opacity 0.5s ;
+}
+
+.home-button:hover:before {
+    opacity: 1;
+    z-index: -1;
+}
+
+.home-button:hover {
+    z-index: 1;
+    animation: glow 5s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.home-button-other {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    width: 80px;
+    padding: 10px;
+    font-family: cursive;
+    font-weight: 100px;
+    border-radius: 60px;
+    letter-spacing: 2px;
+    cursor: pointer; 
+    transition: 1.5s;
+    background: #111;
+    color: #fff;
+}
+
+.home-button-other:hover {
+    background: linear-gradient(90deg, rgb(245, 131, 0), #f1e206, rgb(245,131,0), #f1e206);
+    background-size: 400%;
+}
+
+.home-button-other:before {
+    content: '';   
+    position: absolute;
+    background: inherit ;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    filter: blur(80px);
+    opacity: 0;
+    transition: opacity 0.5s ;
+}
+
+.home-button-other:hover:before {
+    opacity: 1;
+    z-index: -1;
+}
+
+.home-button-other:hover {
+    z-index: 1;
+    animation: glow1 5s linear infinite;
+}
+
+@keyframes glow1 {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+/* Applies to all text in the html program except links. */
+.text {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 0; /* Adjust this value to move it up */
+    
+}
+#pagebody {
+    text-align: center; /* Center align the content */
+}
+
+#button_align {
+    margin-top: 20px; /* Added margin-top */
+}
+
+/* Making the title blink */
+#tubelight1
+{
+    position: relative;
+    font-size:6em;
+    letter-spacing:5px;
+    color:#f5f5f5;
+    text-transform: uppercase;
+    width: auto;
+    margin: auto;
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0008);
+    line-height:0.70em;
+    outline:none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#1a1818;
+        text-shadow:none;
+
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:#f77575;
+        text-shadow: 0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000,
+        0 0 80px #ff0000,
+        0 0 160px #ff0000; 
+
+    }
+}   
+#tubelight2
+{
+    position: relative;
+    font-size:6em;
+    letter-spacing:5px;
+    color:#f5f5f5;
+    text-transform: uppercase;
+    width: auto;
+    margin: auto;
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0008);
+    line-height:0.70em;
+    outline:none;
+    animation: animate2 5s linear infinite;
+}
+@keyframes animate2
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#1a1818;
+        text-shadow:none;
+
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:#94f886;
+        text-shadow: 0 0 10px #15ff00,
+        0 0 20px #15ff00,
+        0 0 40px #15ff00,
+        0 0 80px #15ff00,
+        0 0 160px #15ff00; 
+
+    }
+
+}   
