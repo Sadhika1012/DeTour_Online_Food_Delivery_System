@@ -47,7 +47,7 @@ const Login = () => {
     <div className="login-container">
       <img className="login-bg" src="log.jpg" alt="" />
       <h1 className="login-header">Login</h1>
-      {error && <div className="error-message" >{error}</div>}
+      {error && <div className="error-message1" >{error}</div>}
       <form onSubmit={handleSubmit}>
         <input
           type="text"

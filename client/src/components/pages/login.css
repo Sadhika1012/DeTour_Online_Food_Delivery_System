@@ -60,3 +60,10 @@
     background-color: white;
   }
   
+  .error-message1 {
+    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vh;
+  }

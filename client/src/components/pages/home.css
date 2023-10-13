@@ -48,6 +48,7 @@
     padding: 2vh 12vw; /* Use vw and vh for relative sizing */
     font-family: cursive;
     font-weight: 100;
+    text-align: center;
     border-radius: 10vh; /* Use vh for border radius for relative sizing */
     letter-spacing: .5vw; /* Use vw for relative sizing */
     cursor: pointer; 
@@ -154,10 +155,10 @@
 
 
 #button_align {
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 120%; /* Adjust this value to position the button vertically */
-    right:36%; /* Adjust this value to position the button horizontally */
+    bottom: 100%; /* Adjust this value to position the button vertically */
+    right:10%; /* Adjust this value to position the button horizontally */
     
 }
 

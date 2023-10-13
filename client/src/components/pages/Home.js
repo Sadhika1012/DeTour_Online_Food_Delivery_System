@@ -23,7 +23,7 @@ class Home extends React.Component {
                     <div id="pagebody">
                     <p className="text"><b>Experience Bangalore's top-tier food delivery service, catering to a diverse range of restaurants in your vicinity.</b></p>
                     <p className="text"><b>Bid farewell to hunger and savor delectable, nourishing dishes at your convenience with</b> <b style={{ color: "red" }}>DE</b> <b style={{ color: "lightgreen" }}>TOUR</b><b>.</b></p>
-                        
+                   
                     </div>
                     <div id="button_align"><Link to="/store"><button className="home-button">Order Now!</button></Link></div>
                 </div>

@@ -59,3 +59,10 @@
     background-color: white;
   }
   
+  .error-message {
+    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vh;
+  }
