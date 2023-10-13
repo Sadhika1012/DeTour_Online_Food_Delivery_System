@@ -44,7 +44,7 @@
 /* Making the plain button look fancy */
 .home-button, .home-button-other {
     font-size: 1.5vw; /* Use vw for font size for relative sizing */
-    width: 20%; /* Use percentage for relative sizing */
+    width: 100%; /* Use percentage for relative sizing */
     padding: 2vh 12vw; /* Use vw and vh for relative sizing */
     font-family: cursive;
     font-weight: 100;
@@ -157,8 +157,13 @@
 #button_align {
     position: relative;
     text-align: center;
+
+    top: 120%; /* Adjust this value to position the button vertically */
+    right:32.5%; /* Adjust this value to position the button horizontally */
+
     bottom: 100%; /* Adjust this value to position the button vertically */
     right:10%; /* Adjust this value to position the button horizontally */
+
     
 }
 
