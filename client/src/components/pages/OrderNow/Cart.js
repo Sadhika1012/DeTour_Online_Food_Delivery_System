@@ -1,19 +1,16 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import { Navbar } from '../../layout';
-import { useNavigate } from 'react-router-dom';
+
 import './cart.css'; // Added CSS file
 
 const Cart = () => {
   const { cartItems, removeItemFromCart, clearCart } = useContext(CartContext);
-  const [loggedInUsername, setLoggedInUsername] = useState('');
   const [itemQuantities, setItemQuantities] = useState({});
-  const navigate = useNavigate();
+
 
   useEffect(() => {
-    const username = localStorage.getItem('username');
-    setLoggedInUsername(username);
-
+   
     // Initialize item quantities based on cartItems
     const initialQuantities = {};
     cartItems.forEach((item) => {
@@ -30,15 +27,18 @@ const Cart = () => {
     clearCart();
   };
 
-  const handlePlaceOrder = () => {
+const handlePlaceOrder = () => {
     const orderDetails = {
-      buyItems: cartItems.map(item => ({ ...item, quantity: itemQuantities[item.item._id] })),
-      totalBuyPrice: cartItems.reduce((total, item) => total + parseFloat(item.item.price) * itemQuantities[item.item._id], 0),
-      username: loggedInUsername,
+      items: buyItems.map(item => ({
+        name: item.item.name,
+        quantity: itemQuantities[item.item._id],
+        price: item.item.price,
+      })),
+      totalAmount: totalBuyPrice,
       createdAt: new Date(),
     };
 
-    fetch('http://localhost:8080/api/orders', {
+    fetch('http://localhost:8800/api/orders', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,12 +48,12 @@ const Cart = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data.message);
-        navigate('/profile', { state: { orderDetails } });
+       
       })
       .catch((error) => {
         console.error('An error occurred while placing the order:', error);
       });
-  };
+};
 
   const buyItems = cartItems.filter((item) => item.action === 'buy');
   const totalBuyPrice = buyItems.reduce((total, item) => total + parseFloat(item.item.price) * itemQuantities[item.item._id], 0);

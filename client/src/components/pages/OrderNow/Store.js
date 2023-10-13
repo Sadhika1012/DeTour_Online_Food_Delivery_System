@@ -10,45 +10,12 @@ const Store = () => {
   const [filterCategory, setFilterCategory] = useState('all');
 
   useEffect(() => {
-    setAllImage([
-      {
-        _id: 1,
-        name: 'Burger',
-        description: 'Delicious Burger with all the toppings.',
-        category: 'Fast Food',
-        price: 100,
-        image: 'burger.jpg',
-        quantity:1
-      },
-      {
-        _id: 2,
-        name: 'Pizza',
-        description: 'Freshly baked pizza with your favorite toppings.',
-        category: 'Italian',
-        price: 200,
-        image: 'pizza.jpg',
-        quantity:1,
-      },
-      {
-        _id: 3,
-        name: 'Pizza',
-        description: 'Freshly baked pizza with your favorite toppings.',
-        category: 'Italian',
-        price: 200,
-        image: 'pizza.jpg',
-        quantity:1,
-      },
-      {
-        _id: 4,
-        name: 'Pizza',
-        description: 'Freshly baked pizza with your favorite toppings.',
-        category: 'Italian',
-        price: 200,
-        image: 'pizza.jpg',
-        quantity:1,
-      }
-    ]);
-  }, []);
+    // Fetch food items from your backend
+    fetch('http://localhost:8800/foods/food') // Assuming your endpoint is /foods/food
+      .then(response => response.json())
+      .then(data => setAllImage(data))
+      .catch(error => console.error('Error:', error));
+  }, []); // Empty dependency array means this effect will run once when the component mounts
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
