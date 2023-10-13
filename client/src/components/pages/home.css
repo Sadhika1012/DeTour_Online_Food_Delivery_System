@@ -155,14 +155,13 @@
 
 
 #button_align {
-    position: relative;
+    position: absolute;
     text-align: center;
 
     top: 120%; /* Adjust this value to position the button vertically */
     right:32.5%; /* Adjust this value to position the button horizontally */
 
-    bottom: 100%; /* Adjust this value to position the button vertically */
-    right:10%; /* Adjust this value to position the button horizontally */
+    
 
     
 }
