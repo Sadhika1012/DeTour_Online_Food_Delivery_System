@@ -12,9 +12,11 @@
 
 /* Item Image */
 .cart_item img {
-  max-width: 70px; /* Adjust the value as needed */
-  max-height: 70px; 
   
+  max-width: 35%;
+  max-height: 35%;
+  border-radius: 30px; /* Rounded edges to the images in the cart */
+  float: right;
 }
 
 /* Quantity Text */
@@ -53,6 +55,7 @@ button {
 #remove {
   background-color: #ffe600;
   color: white;
+  border-radius: 20px;
 }
 
 /* Plus Button */
@@ -65,6 +68,8 @@ button {
 #minus {
   background-color: red;
   color: white;
+  border-radius: 20px;
+  padding: 5px 5px;
 }
 
 /* Total Items and Total Price */
@@ -81,36 +86,65 @@ button {
   color: #39ff14; /* Green */
 }
 
-/* Checkout and Clear Cart Buttons */
-#checkout {
-  width: 100px;
-  padding: 15px 25px;
-  color: #ffffff;
-  background-color: #39ff14; 
-  border-radius: 60px;
-  border: none;
-  box-shadow: 0 0 0 0 #f9e506;
-  transition: ease-in 1s;
-  outline: none;
-}
 
+
+
+
+
+
+
+
+/* Add styles for the "Clear Cart" button */
+/* Add styles for the "Clear Cart" button */
 #clear_cart {
-  width: 100px;
-  padding: 15px 25px;
+  width: 30%; /* Relative width */
+  padding: 1% 5%; /* Adjust padding proportionally to width */
   color: #ffffff;
-  background-color: #39ff14; 
-  border-radius: 60px;
+  border-radius: 20px;
+  font-size: 140%; /* Adjust font size proportionally to width */
   border: none;
   box-shadow: 0 0 0 0 #f9e506;
-  transition: ease-in 1s;
+  transition: all 0.3s;
   outline: none;
+  background-color: #ff1414;
+  float: right;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
-#checkout:hover {
-  box-shadow: inset 100px 0 0 0 #e9f906;
-}
-
+/* Add styles for the "Checkout" button */
 #checkout {
-  background-color: red;
-  margin-left: 10px;
+  width: 30%; /* Relative width */
+  padding: 1% 5%; /* Adjust padding proportionally to width */
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 140%; /* Adjust font size proportionally to width */
+  border: none;
+  box-shadow: 0 0 0 0 #f9e506;
+  transition: all 0.3s;
+  outline: none;
+  background-color: #2bff00;
+  float: right;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+/* Add hover effect for clear_cart and checkout buttons */
+#clear_cart:hover, #checkout:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  background-color: #ffea00;
+}
+
+/* Adjust margins and spacing between elements */
+.cart_item {
+  margin-bottom: 2%; /* Adjust margin between items */
+}
+
+.cart_item_details {
+  margin-top: 2%; /* Adjust margin above details */
+}
+
+.item_quantity {
+  margin-top: 1%; /* Adjust margin above quantity text */
 }

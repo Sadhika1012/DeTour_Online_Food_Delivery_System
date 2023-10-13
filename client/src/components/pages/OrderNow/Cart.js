@@ -105,16 +105,21 @@ const handlePlaceOrder = () => {
           ))}
         </div>
         <div className="total">
-          <span className="total_items">Total Items: {totalItems}</span>
+          <span className="total_items">Total Items: {totalItems}</span><br/>
           <span className="total_price">Total Price: ₹{totalBuyPrice.toFixed(2)}</span>
         </div>
         <div className="checkout_cont">
-          <button id="checkout" onClick={handlePlaceOrder}>
-          Checkout
-          </button>
-          <button id="clear_cart" onClick={handleClearCart}>
-            Clear Cart
-          </button>
+          <div className='Button-container'>
+            <button id="checkout" onClick={handlePlaceOrder}>
+            Checkout
+            </button>
+            
+            <button id="clear_cart" onClick={handleClearCart}>
+              Clear Cart
+            </button>
+
+          </div>
+          
         </div>
       </div>
     </div>
