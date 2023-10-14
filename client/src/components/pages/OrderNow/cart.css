@@ -21,8 +21,9 @@
 
 /* Quantity Text */
 .item_quantity {
-  color: purple;
+  color: rgb(247, 181, 0);
   font-weight: bold;
+  font-size: 40px;
 }
 
 /* Item Details */
@@ -33,12 +34,19 @@
 
 /* Item Name */
 .cart_item_name {
-  color: green;
+  color: rgb(255, 7, 7);
+  font-size: 30px;
+  font-weight: bold;
+  margin-top:-30px ;
+
 }
 
 /* Item Price */
 .cart_item_price {
-  color: red;
+  color: rgb(0, 255, 21);
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -20px;
 }
 
 /* Buttons */
@@ -56,12 +64,34 @@ button {
   background-color: #ffe600;
   color: white;
   border-radius: 20px;
+  padding: 12px 40px 25px;
+  background-image: url('/public/trash1.svg'); /* Set the SVG image URL */
+  background-size: 40px 40px; /* Adjust the size of the SVG image */
+  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  background-position: center; /* Center the image within the button */
+  text-align: center; /* Center the button text */
 }
+
+/* You can hide the default button text, or adjust it as needed */
+#remove {
+  text-indent: -9999px; /* Hides the text offscreen */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 
 /* Plus Button */
 #plus {
   background-color: #39ff14;
   color: white;
+  border-radius: 20px;
+  padding: 30px 40px;
+  background-image: url('/public/plus.svg'); /* Set the SVG image URL */
+  background-size: 40px 40px; /* Adjust the size of the SVG image */
+  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  background-position: center; /* Center the image within the button */
+  text-align: center; /* Center the button text */
+  
 }
 
 /* Minus Button */
@@ -69,7 +99,12 @@ button {
   background-color: red;
   color: white;
   border-radius: 20px;
-  padding: 5px 5px;
+  padding: 30px 40px;
+  background-image: url('/public/minus.svg'); /* Set the SVG image URL */
+  background-size: 40px 40px; /* Adjust the size of the SVG image */
+  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  background-position: center; /* Center the image within the button */
+  text-align: center; /* Center the button text */
 }
 
 /* Total Items and Total Price */

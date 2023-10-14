@@ -76,7 +76,7 @@ const handlePlaceOrder = () => {
             <div className="cart_item" key={item.item._id}>
               <div className="cart_img">
                 <img src={item.item.image} alt={item.item.name} />
-                <p className="item_quantity">Quantity: {itemQuantities[item.item._id]}</p>
+                <p className="item_quantity">Qty: {itemQuantities[item.item._id]}</p>
               </div>
               <div className="cart_item_details">
                 <p className="cart_item_name">Name: {item.item.name}</p>
@@ -91,14 +91,14 @@ const handlePlaceOrder = () => {
                   id="plus"
                   onClick={() => handleQuantityChange(item.item._id, itemQuantities[item.item._id] + 1)}
                 >
-                  +
+                  
                 </button>
                 <button
                   id="minus"
                   onClick={() => handleQuantityChange(item.item._id, itemQuantities[item.item._id] - 1)}
                   disabled={itemQuantities[item.item._id] <= 1}
                 >
-                  -
+                  
                 </button>
               </div>
             </div>

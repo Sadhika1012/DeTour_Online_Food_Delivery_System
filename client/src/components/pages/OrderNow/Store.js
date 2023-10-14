@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { CartContext } from './CartContext';
 import { Navbar } from '../../layout';
-import './store.css'; 
+import './store.css';
 
 const Store = () => {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -54,7 +54,7 @@ const Store = () => {
           {/* Add more categories as needed */}
         </select>
       </div>
-      <div className="section">
+      <section>
         {filteredImagesByCategory.map((data) => (
           <div key={data._id} className="cards">
             <div className="image_box">
@@ -74,7 +74,7 @@ const Store = () => {
             </div>
           </div>
         ))}
-      </div>
+      </section>
     </div>
   );
 };
