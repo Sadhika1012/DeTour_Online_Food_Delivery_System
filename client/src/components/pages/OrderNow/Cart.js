@@ -59,7 +59,7 @@ const handlePlaceOrder = () => {
   const totalBuyPrice = buyItems.reduce((total, item) => total + parseFloat(item.item.price) * itemQuantities[item.item._id], 0);
   const totalItems = Object.values(itemQuantities).reduce((total, quantity) => total + quantity, 0);
   const handleQuantityChange = (itemId, quantity) => {
-    quantity = Math.max(1, Math.min(quantity, 10));
+    quantity = Math.max(1, Math.min(quantity, 6));
 
     setItemQuantities((prevQuantities) => ({
       ...prevQuantities,
