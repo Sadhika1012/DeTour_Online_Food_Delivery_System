@@ -18,6 +18,7 @@ const Navbar = () => {
         <li><Link to="/faq" style={linkStyle}>FAQs</Link></li>
         <li><Link to="/cart" style={linkStyle}>Cart</Link></li>
         <li><Link to="/store" style={linkStyle}>Order Now</Link></li>
+        <li><Link to="/profile" style={linkStyle}>Profile</Link></li>
       </ul>
     </div>
   );
