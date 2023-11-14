@@ -1,69 +1,82 @@
 .login-container {
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjusted to fill the entire viewport height */
+}
+
+.login-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Preserve aspect ratio */
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.login-header {
+  position: relative;
+  margin-left: 31%;
+  margin-top:5%; /* Adjusted for spacing */
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.login-input {
+  width: 100%; /* Adjusted width for better visibility */
+  max-width: 300px; /* Added max-width to prevent excessive narrowing */
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 1px solid rgb(90, 89, 89);
+  border-radius: 25px;
+  background: #fffbfb;
+  text-align: center; /* Adjusted property */
+  box-sizing: border-box;
+  margin-left: 20%;
   
-  .login-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* Preserve aspect ratio */
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -2;
-  }
-  
-  .login-header {
-    position: relative;
-    right: 17%;
-    top: 40px;
-  }
-  
-  .login-input {
-    width: 25%;
-    padding: 12px 20px;
-    margin: 10px 0;
-    position: relative;
-    display: block;
-    left: 550px;
-    border: 1px solid rgb(90, 89, 89);
-    border-radius: 25px;
-    background: #fffbfb;
-    text-align-last: center;
-    box-sizing: border-box;
-  }
-  
-  .login-button {
-    width: 12%;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    position: relative;
-    left: 550px;
-  }
-  
-  .login-button-submit {
-    background-color: #0dc007;
-    color: white;
-  }
-  
-  .login-button-other {
-    background-color: #df0b0b;
-    color: white;
-  }
-  
-  .login-button:hover {
-    background-color: #e4ef17;
-  }
-  
-  .label-bg {
-    background-color: white;
-  }
-  
-  .error-message1 {
-    color: white;
+}
+
+/* Common styles for both buttons */
+.login-button {
+  width: 20%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #e4ef17;
+}
+
+.label-bg {
+  background-color: white;
+}
+
+.error-message1 {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2vh;
-  }
+}
+
+/* Styles for the login button */
+.login-button-submit {
+  background-color: #0dc007;
+  color: white;
+  margin-left: 24.5%;
+  width:50%;
+}
+
+/* Styles for the sign-up button */
+.login-button-other {
+  background-color: #df0b0b;
+  color: white;
+}
