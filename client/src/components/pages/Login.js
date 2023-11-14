@@ -69,11 +69,12 @@ const Login = () => {
           Login
         </button>
       </form>
-      <button className="login-button login-button-other" type="button">
-        <Link to="/sign">
-        Sign up
+      <button className="login-button login-button-other login-button-signup" type="button">
+        <Link to="/sign" style={{ textDecoration: 'none', color: 'white' }}>
+          Sign up
         </Link>
-      </button>
+    </button>
+
     </div>
   );
 };
