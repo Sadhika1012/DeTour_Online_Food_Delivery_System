@@ -98,7 +98,7 @@ const Sign = () => {
 
       </div>
       <button type="button" className="sign-button sign-button-other">
-        <Link to="/">Login</Link>
+        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Login</Link>
       </button>
     </div>
   );
