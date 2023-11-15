@@ -8,8 +8,6 @@ import {
   Sign,
   Store,
   Login,
-  CustomerProfile
-  //AdminDashboard
 } from './components/pages'
 
 
@@ -28,7 +26,7 @@ function App() {
               <Route path="/about" element={<About/>}/>
                <Route path="/sign" element={<Sign/>} />
 
-               <Route path="/profile" element={<CustomerProfile/>} />
+            
                
                <Route path="/store" element={<Store/>} />
                <Route path="/cart" element={<Cart/>}/>
