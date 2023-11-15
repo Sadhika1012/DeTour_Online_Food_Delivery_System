@@ -34,7 +34,7 @@ Contributions to enhance and expand the functionality of this project are welcom
 
 ## Authors
 - [Sadhika Rao](https://github.com/Sadhika1012) - Developer
-- [Sai Teja](https://github.com/Sadhika1012) - Developer
-- [Sanjana MV](https://github.com/Sadhika1012) - Developer
-- [Roseline Jerry A](https://github.com/Sadhika1012) - Developer
+- [Sai Teja](https://github.com/SaiTeja01402) - Developer
+- [Sanjana MV](https://github.com/Sanjanamv2003) - Developer
+- [Roseline Jerry A](https://github.com/rxlnj) - Developer
 
